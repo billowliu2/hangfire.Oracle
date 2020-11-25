@@ -1,6 +1,6 @@
-# Hangfire.Oracle.Core Implementation
+# Hangfire.Oracle Implementation
 
-Hangfire.Oracle.Core is based on Hangfire.MySqlStorage(https://github.com/arnoldasgudas/Hangfire.MySqlStorage)
+Hangfire.Oracle is based on Hangfire.Oracle.CoreStorage(https://github.com/akoylu/Hangfire.Oracle.Core)
 
 I fixed some bugs and support .net standard 2.0.
 
@@ -17,7 +17,7 @@ Install Oracle
 Run the following command in the NuGet Package Manager console to install Hangfire.Oracle.Core:
 
 ```
-Install-Package Hangfire.Oracle.Core
+Install-Package Hangfire.Oracle
 ```
 
 ## Usage
