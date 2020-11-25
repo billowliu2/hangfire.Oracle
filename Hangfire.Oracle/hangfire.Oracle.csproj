@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Title>Hangfire.Oracle</Title>
+    <Summary>Hangfire's Oracle storage</Summary>
+    <Description>Hangfire's Oracle storage.Update Nuget</Description>
+    <PackageId>Hangfire.Oracle</PackageId>
+    <Product>Hangfire.Oracle</Product>
+    <Company>bill</Company>
+    <Authors>bill</Authors>
+    <Owners>bill</Owners>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/billowliu2/hangfire.Oracle</PackageProjectUrl>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageTags>Hangfire Oracle Hangfire.Oracle Hangfire.Oracle</PackageTags>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyName>Hangfire.Oracle</AssemblyName>
+    <RootNamespace>Hangfire.Oracle</RootNamespace>
+    <PackageReleaseNotes>Fix OracleStorage constructor when using Func constructor</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Install.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Install.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.Oracle" Version="2.0.1" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.18" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.100" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>
