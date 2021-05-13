@@ -1,24 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
-    <Title>Hangfire.Oracle</Title>
-    <Summary>Hangfire's Oracle storage</Summary>
-    <Description>Hangfire's Oracle storage.Update Nuget</Description>
-    <PackageId>Hangfire.Oracle</PackageId>
-    <Product>Hangfire.Oracle</Product>
-    <Company>bill</Company>
-    <Authors>bill</Authors>
-    <Owners>bill</Owners>
+    <Title>Uinfor.Hangfire.Oracle</Title>
+    <Summary>Uinfor Hangfire's Oracle storage</Summary>
+    <Description>Uinfor.Hangfire's Oracle storage.Update Nuget</Description>
+    <PackageId>Uinfor.Hangfire.Oracle</PackageId>
+    <Product>Uinfor.Hangfire.Oracle</Product>
+    <Company>Uinfor</Company>
+    <Authors>Uinfor</Authors>
+    <Owners>Uinfor</Owners>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/billowliu2/hangfire.Oracle</PackageProjectUrl>
-    <Copyright>Copyright 2020</Copyright>
-    <PackageTags>Hangfire Oracle Hangfire.Oracle Hangfire.Oracle</PackageTags>
+    <Copyright>Copyright 2021</Copyright>
+    <PackageTags>Uinfor Hangfire's Oracle storagee</PackageTags>
     <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyName>Hangfire.Oracle</AssemblyName>
-    <RootNamespace>Hangfire.Oracle</RootNamespace>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyName>Uinfor.Hangfire.Oracle</AssemblyName>
+    <RootNamespace>Uinfor.Hangfire.Oracle</RootNamespace>
     <PackageReleaseNotes>Fix OracleStorage constructor when using Func constructor</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Install.sql" />
