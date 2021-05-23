@@ -7,7 +7,7 @@ using Dapper;
 using Hangfire.Logging;
 using Hangfire.Storage;
 
-namespace Hangfire.Oracle.JobQueue
+namespace Uinfor.Hangfire.Oracle.JobQueue
 {
     internal class OracleFetchedJob : IFetchedJob
     {

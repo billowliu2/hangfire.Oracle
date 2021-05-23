@@ -8,11 +8,11 @@ using Dapper.Oracle;
 
 using Hangfire.Common;
 using Hangfire.Logging;
-using Hangfire.Oracle.Entities;
 using Hangfire.States;
 using Hangfire.Storage;
+using Uinfor.Hangfire.Oracle.Entities;
 
-namespace Hangfire.Oracle
+namespace Uinfor.Hangfire.Oracle
 {
     internal class OracleWriteOnlyTransaction : JobStorageTransaction
     {

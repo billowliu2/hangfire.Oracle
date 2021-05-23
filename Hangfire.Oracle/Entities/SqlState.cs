@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hangfire.Oracle.Entities
+namespace Uinfor.Hangfire.Oracle.Entities
 {
     internal class SqlState
     {

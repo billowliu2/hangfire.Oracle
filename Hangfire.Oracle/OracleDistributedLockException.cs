@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hangfire.Oracle
+namespace Uinfor.Hangfire.Oracle
 {
     public class OracleDistributedLockException : Exception
     {

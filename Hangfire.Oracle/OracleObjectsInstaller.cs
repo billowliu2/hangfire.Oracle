@@ -8,11 +8,12 @@ using Dapper;
 
 using Hangfire.Logging;
 
-namespace Hangfire.Oracle
+namespace Uinfor.Hangfire.Oracle
 {
     public static class OracleObjectsInstaller
     {
         private static readonly ILog Log = LogProvider.GetLogger(typeof(OracleStorage));
+
         public static void Install(IDbConnection connection, string schemaName)
         {
             if (connection == null) throw new ArgumentNullException(nameof(connection));
@@ -25,12 +26,12 @@ namespace Hangfire.Oracle
 
             Log.Info("Start installing Hangfire SQL objects...");
 
-            var script = GetStringResource("Uinfo.Hangfire.Oracle.Install.sql");
+            var script = GetStringResource("Uinfor.Hangfire.Oracle.Install.sql");//Hangfire.Oracle.
 
             var sqlCommands = script.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
             sqlCommands.ToList().ForEach(s => connection.Execute(s));
 
-    Log.Info("Hangfire SQL objects installed.");
+            Log.Info("Hangfire SQL objects installed.");
         }
 
         private static bool TablesExists(IDbConnection connection, string schemaName)
